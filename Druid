@@ -1,0 +1,261 @@
+### Screenshots
+
+##### Balance
+###### Main (Nothing targeted)
+`
+![image](https://github.com/vkottler/workspace/assets/71585108/bdb6030f-2b4f-41ce-91ae-bb45e7432fa7)
+
+`
+
+##### Feral
+###### Main (Nothing Targeted)
+`
+![image](https://github.com/vkottler/workspace/assets/71585108/1800b4d1-538c-44ee-94f4-004281378c76)
+
+`
+
+##### Guardian
+###### Main (Nothing Targeted)
+`
+![image](https://github.com/vkottler/workspace/assets/71585108/9cfa2c8a-ebb7-44e0-8c31-8b9ebdfeeffb)
+
+`
+
+##### Restoration 
+###### Main - No form, nothing targeted, all macros same for each form.
+`
+![image](https://github.com/vkottler/workspace/assets/71585108/aae3484a-1298-421d-be86-1c2e39484435)
+
+`
+
+##Notes:
+
+## Formatting for each
+
+#### Specialization 
+##### Main - No form, nothing targeted
+
+##### No Form
+###### Help
+###### Harm
+
+##### Cat Form
+###### Help
+###### Harm
+
+##### Bear Form
+###### Help
+###### Harm
+
+##### Moonkin Form
+###### Help
+###### Harm
+
+
+
+****
+```
+```
+
+**2**
+```
+#showtooltip 
+/cast [form:0] Nature's Swiftness; [form:2] Maim; [form:4] Wild Mushroom
+```
+
+**3**
+```
+#showtooltip
+/cast [spec:4,help] Cenarion Ward; [spec:2,noknown: Primal Wrath] Regrowth; [spec:2,known:Primal Wrath] Primal Wrath; Wrath
+```
+
+**Bark**
+```
+#showtooltip
+/cast [@target] Ironbark
+```
+
+**C**
+```
+#showtooltip
+/cast [@mouseover,help,dead][help,dead]Rebirth;[spec:4,@mouseover,help,nodead]Nature's Cure;[@mouseover,help,nodead]Remove Corruption;[@mouseover,harm,nodead][harm]Soothe;[spec:4]Nature's Cure;Remove Corruption
+```
+
+**c-F**
+```
+#showtooltip Prowl
+/cast [nocombat] !Prowl
+```
+
+**E**
+```
+#showtooltip
+/cast [help] Lifebloom; [form:2] Ferocious Bite; [form:1] Mangle;  Sunfire
+```
+
+**F**
+```
+#showtooltip
+/cast [form:0] Wild Growth; [form:2] Swipe; [form:1] Thrash; [form:4] Starfire
+
+```
+
+**flo**
+```
+#showtoolip Nature's Vigil
+/use 14
+/cast Nature's Vigil
+/cast Flourish
+```
+
+**Front Mouse 5**
+```
+#showtooltip
+/cast [help] Nourish; [form:2] Skull Bash; [form:4][form:0] Solar Beam
+
+```
+
+**fsb**
+```
+#showtooltip Skull Bash
+/cast [target=focus,exists] Skull Bash
+```
+
+**Innervate.**
+```
+#showtooltip Innervate
+/cast [@player] Innervate
+/cast Berserking
+```
+
+**Q**
+```
+#showtooltip
+/cast [help] Swiftmend; [form:2] Rake; Entangling Roots
+```
+
+**R**
+```
+#showtooltip
+/cast [form:1] Frenzied Regeneration; [help] Regrowth; [form:2] Rip; Starsurge
+```
+
+**S**
+```
+#showtooltip 
+/cast [help] Rejuvenation; [form:2] Shred; Moonfire
+
+```
+
+**s-C**
+```
+#showtooltip
+/cast [noform:2] !Cat Form; [form:2,nocombat] !Prowl
+```
+
+**s-F**
+```
+#showtooltip
+/cast [form:1] Swipe; [form:2] Thrash; [form:4,noknown: New Moon] Fury of Elune; [form:4,noknown:Fury of Elune] New Moon; [form:0,@cursor] Efflorescence
+
+```
+
+**s-Frontmouse5**
+```
+#showtooltip
+/cast [form:2,@focus] Skull Bash; [form:4,@focus][form:0,@focus] Solar Beam
+
+```
+
+**T**
+```
+#showtooltip 
+/cast [indoors] !Cat Form; !Travel Form
+
+```
+
+## General Macros
+
+**13**
+```
+#show 13
+/use 13
+
+```
+
+**14**
+```
+#show 13
+/use 13
+
+```
+
+**c-R**
+```
+#showtooltip Healthstone
+/use Healthstone
+
+```
+
+**s-Q**
+```
+#showtooltip
+/cast [known:Mighty Bash] Mighty Bash; Incapacitating Roar
+
+```
+comment on above: not sure if we need to use this, play for a bit and see if anything doesn't change with talent change.
+
+**speed**
+```
+/script base = BASE_MOVEMENT_SPEED
+/script cur, run, fly, swim = GetUnitSpeed("player")
+/script ChatFrame1:AddMessage(string.format("Your current maximal speeds are: running %g%%, flying %g%%, swimming %g%%.", run/base*100, fly/base*100, swim/base*100))
+
+```
+
+**STOP**
+```
+/stopcasting
+/cancelform
+/dismount
+/cancelaura Aspect of the Turtle
+/cancelaura Ice Block
+/cancelaura Slow Fall
+/cancelaura Levitate
+/cancelaura Roll
+/cancelaura Flying Serpent Kick
+/cancelaura Burning Rush
+/cancelaura Aspect of the Turtle
+
+```
+
+**UrMe**
+```
+#showtooltip
+/cast [known:Ursol's Vortex] Ursol's Vortex; Mass Entanglement
+
+```
+
+****
+```
+```
+
+****
+```
+```
+
+****
+```
+```
+
+****
+```
+```
+
+****
+```
+```
+
+****
+```
+```
